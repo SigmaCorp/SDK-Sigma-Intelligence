@@ -1,6 +1,6 @@
 const sdk_api = require('./sdk/main')
 
-const sdk = new sdk_api.SigmaSDK("7e1ee076-ab67-460b-8b1f-abcadc583f0f")
+const sdk = new sdk_api.SigmaSDK("TU_TOKEN_DE_SIGMA")
 
 async function main() {
     // Profesional
