@@ -15,6 +15,8 @@ async def main():
     dni_number_resolver = await sigma_sdk.api_controller("dni_number_resolver", "dni", "12345678", "profesional")
     dni_resolver_2 = await sigma_sdk.api_controller("dni_resolver_2", "dni", "12345678", "profesional")
     num_resolver = await sigma_sdk.api_controller("num_resolver", "num", "1125363443", "profesional")
+    buscar_personas = await sigma_sdk.api_controller("buscar_persona", "nombre", "Leandro Lopez", "profesional")
+    buscar_vecinos = await sigma_sdk.api_controller("buscar_vecinos", "direccion", "libertador", "profesional")
 
     # Medium
     patente_resolver = await sigma_sdk.api_controller("patente-resolver-medium", "patente", "gay001", "medium")
