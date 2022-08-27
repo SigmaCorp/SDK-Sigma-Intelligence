@@ -47,7 +47,7 @@ async def test():
     return patente_dni
     
 loop = asyncio.get_event_loop()
-loop.run_until_complete(test()
+print(loop.run_until_complete(test()))
 ```
 
 
