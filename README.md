@@ -1,4 +1,5 @@
-## SDK Sigma Intelligence Tutorial Version 0.6.9
+## SDK Sigma Intelligence Tutorial 
+## Version 0.6.9
 
 #### SDK Node JS
 
