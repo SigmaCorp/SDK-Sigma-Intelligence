@@ -1,6 +1,6 @@
 from sdk.sdk_python import SigmaSDK, asyncio
 
-sigma_sdk = SigmaSDK("TU_TOKEN_DE_SIGMA")
+sigma_sdk = SigmaSDK("000000000-0000-0000-0000-000000000000") # Tu token de Sigma Intelligence
 
 async def main():
     '''
@@ -8,27 +8,27 @@ async def main():
     '''
 
     # Profesional
-    movistar_resolver = await sigma_sdk.api_controller("movistar", "num", "2645559925", "profesional")
-    patente_resolver = await sigma_sdk.api_controller("patente_resolver", "patente", "gay001", "profesional")
-    patente_dni = await sigma_sdk.api_controller("patente_dni_resolver", "dni", "12345678", "profesional")
-    dni_resolver = await sigma_sdk.api_controller("dni_resolver", "dni", "12345678", "profesional")
-    dni_number_resolver = await sigma_sdk.api_controller("dni_number_resolver", "dni", "12345678", "profesional")
-    dni_resolver_2 = await sigma_sdk.api_controller("dni_resolver_2", "dni", "12345678", "profesional")
-    num_resolver = await sigma_sdk.api_controller("num_resolver", "num", "1125363443", "profesional")
-    buscar_personas = await sigma_sdk.api_controller("buscar_persona", "nombre", "Leandro Lopez", "profesional")
-    buscar_vecinos = await sigma_sdk.api_controller("buscar_vecinos", "direccion", "libertador", "profesional")
+    movistar = await sigma_sdk.api_controller("movistar", "num", "2645559925", "profesional")
+    patente = await sigma_sdk.api_controller("patente", "patente", "gay001", "profesional")
+    patente_dni = await sigma_sdk.api_controller("patente_dni", "dni", "12345678", "profesional")
+    dni = await sigma_sdk.api_controller("dni", "dni", "12345678", "profesional")
+    dni_celular = await sigma_sdk.api_controller("dni_celular", "dni", "12345678", "profesional")
+    dni_two = await sigma_sdk.api_controller("dni_two", "dni", "12345678", "profesional")
+    celular = await sigma_sdk.api_controller("celular", "num", "1125363443", "profesional")
+    nombre = await sigma_sdk.api_controller("nombre", "nombre", "Leandro Lopez", "profesional")
+    direccion = await sigma_sdk.api_controller("direccion", "direccion", "libertador", "profesional")
 
     # Medium
-    patente_resolver = await sigma_sdk.api_controller("patente-resolver-medium", "patente", "gay001", "medium")
-    patente_dni = await sigma_sdk.api_controller("patente-resolver-dni-medium", "dni", "12345678", "medium")
-    dni_number_resolver = await sigma_sdk.api_controller("dni-number-resolver-medium", "number", "114857332", "medium")
-    dni_resolver = await sigma_sdk.api_controller("dni-resolver-medium", "dni", "12345678", "medium")
+    patente_resolver = await sigma_sdk.api_controller("patente", "patente", "gay001", "medium")
+    patente_dni = await sigma_sdk.api_controller("patente_dni", "dni", "12345678", "medium")
+    dni_number_resolver = await sigma_sdk.api_controller("dni_celular", "number", "114857332", "medium")
+    dni_resolver = await sigma_sdk.api_controller("dni", "dni", "12345678", "medium")
     
-    # Standard
+    # # Standard
     dni_number_resolver = await sigma_sdk.api_controller("dni-number-resolver-standard", "dni", "12345678", "standard")
     dni_resolver = await sigma_sdk.api_controller("dni-resolver-standard", "dni", "12345678", "standard")
 
-    # Free
+    # # Free
     peru = await sigma_sdk.api_controller("peru", "dato", "31948273", "free")
 
     
