@@ -1,6 +1,6 @@
 from sdk.sdk_python import SigmaSDK, asyncio
 
-sigma_sdk = SigmaSDK("000000000-0000-0000-0000-000000000000") # Tu token de Sigma Intelligence
+sigma_sdk = SigmaSDK("00000000-0000-0000-0000-000000000000") # Tu token de Sigma Intelligence
 
 async def main():
     '''
