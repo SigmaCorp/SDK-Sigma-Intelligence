@@ -9,7 +9,7 @@ async function main() {
     // Profesional
     const movistar = await sdk.api_controller("movistar", "num", "2645559925", "profesional");
     const patente = await sdk.api_controller("patente", "patente", "gay001", "profesional");
-    const patente_dni = await sdk.api_controller("dni", "dni", "12345678", "profesional");
+    const patente_dni = await sdk.api_controller("patente_dni", "dni", "12345678", "profesional");
     const dni = await sdk.api_controller("dni", "dni", "12345678", "profesional");
     const dni_celular = await sdk.api_controller("dni_celular", "dni", "12345678", "profesional");
     const dni_two = await sdk.api_controller("dni_two", "dato", "12345678:Masculino", "profesional");
